@@ -1,23 +1,24 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class VariablesTheme  {
-    public static void main(String[] args){
+public class VariablesTheme {
+    public static void main(String[] args) {
         System.out.println("1. ВЫВОД ХАРАКТЕРИСТИК КОМПЬЮТЕРА");
         byte core = 4;
-        short mhz = 3500 ;
+        short mhz = 3500;
         System.out.println("Процессор: ядер " + core + ", чистота процессора " + mhz + " MHz");
         char gpu = '8';
         System.out.println("Видеокарта: объём видеопамяти " + gpu + " GPU");
         long ram = 16;
-        float mhz_ram = 2400;
-        System.out.println("Оперативная память: объем памяти " + ram + "GB, " + " чистота ОЗУ " + mhz_ram + " MHz");
+        float mhzram = 2400;
+        System.out.println("Оперативная память: объем памяти " + ram + "GB, " + 
+                " чистота ОЗУ " + mhzram + " MHz");
         double ssd = 1.8;
-        int dl_speed = 6000;
-        System.out.println("SSD: объем памяти " + ssd + "TB, " + dl_speed + "GB/сек");
-        boolean win_os10 = true;
-        System.out.println("ОС Windows 10: " + win_os10);
-        System.out.println("======================================================================================");
+        int dlspeed = 6000;
+        System.out.println("SSD: объем памяти " + ssd + "TB, " + dlspeed + "GB/сек");
+        boolean winos10 = true;
+        System.out.println("ОС Windows 10: " + winos10);
+        System.out.println(" ");
         System.out.println("2. РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ");
         double pen = 105.5;
         double book = 235.83;
@@ -28,14 +29,14 @@ public class VariablesTheme  {
         System.out.println("Cтоимость товаров без скидки = " + cost);
         System.out.println("Cумма скидки = " + (pen + book) * discount / 100);
         System.out.println("Cтоимость товаров со скидкой = " + cost1);
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("3. ВЫВОД СЛОВА JAVA");
         System.out.println(" ");
         System.out.println("   J    a  v     v  a");
         System.out.println("   J   a a  v   v  a a");
         System.out.println("J  J  aaaaa  V V  aaaaa");
         System.out.println(" JJ  a     a  V  a     a");
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("4. ВЫВОД MIN И MAX ЗНАЧЕНИЙ ЦЕЛЫХ ЧИСЛОВЫХ ТИПОВ");
         byte max = 127;
         System.out.println("byte_max: " + max);
@@ -56,7 +57,7 @@ public class VariablesTheme  {
         max2 -= 2;
         System.out.println("int_max--: " + max2);
         long max3 = 9223372036854775807L;
-        System.out.println("long_max: " +max3);
+        System.out.println("long_max: " + max3);
         max3 += 1;
         System.out.println("long_max++: " + max3);
         max3 -= 2;
@@ -67,7 +68,7 @@ public class VariablesTheme  {
         System.out.println("char_max++: " + (int) max4);
         max4 -= 2;
         System.out.println("char_max--: " + (int) max4);
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("5. ПЕРЕСТАНОВКА ЗНАЧЕНИЙ ПЕРЕМЕННЫХ");
         int num = 2;
         int num1 = 5;
@@ -86,7 +87,7 @@ public class VariablesTheme  {
         num1 ^= num;
         num ^= num1;
         System.out.println("После обмена: num = " + num + ", num1 = " + num1);
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("6. ВЫВОД СИМВОЛОВ И ИХ КОДОВ");
         int usd = 36;
         int asterisc = 42;
@@ -103,7 +104,7 @@ public class VariablesTheme  {
         System.out.println("64 = " + email1);
         System.out.println("94 = " + caret1);
         System.out.println("126 = " + tilde1);
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("7. ВЫВОД В КОНСОЛЬ ASCII-АРТ ДЮКА");
         char slash = '/';
         char backslash = '\\';
@@ -114,8 +115,9 @@ public class VariablesTheme  {
         System.out.println("   " + slash + "  " + backslash);
         System.out.println("  " + slash + underscore + leftParen + " " + rightParen + backslash);
         System.out.println(" " + slash + "      " + backslash);
-        System.out.println(slash + "" + underscore + "" + underscore + "" + underscore + "" + underscore + slash + backslash + underscore + underscore + backslash);
-        System.out.println("======================================================================================");
+        System.out.println(slash + "" + underscore + "" + underscore + "" + underscore + "" + 
+                underscore + slash + backslash + underscore + underscore + backslash);
+        System.out.println(" ");
         System.out.println("8. МАНИПУЛЯЦИИ С СОТНЯМИ, ДЕСЯТКАМИ И ЕДИНИЦАМИ ЧИСЛА");
         int numbers = 123;
         int numbers1 = numbers / 100;
@@ -128,7 +130,7 @@ public class VariablesTheme  {
         System.out.println("единиц - " + numbers4);
         System.out.println("Сумма разрядов = " + numbers1 + numbers3 + numbers4);
         System.out.println("Произведение разрядов = " + numbers1 * numbers3 * numbers4);
-        System.out.println("======================================================================================");
+        System.out.println(" ");
         System.out.println("9. ПЕРЕВОД СЕКУНД В ЧАСЫ, МИНУТЫ И СЕКУНДЫ");
         int totalsec = 86399; 
         int hours = totalsec / 3600;
