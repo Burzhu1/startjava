@@ -139,16 +139,16 @@ public class VariablesTheme {
         System.out.println(hours + ":" + min + ":" + sec);
         System.out.println(" ");
         System.out.println("10) РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ");
-        double pen = new BigDecimal("105.5");
-        double book = new BigDecimal("235.83");
-        double discount = 11;
-        double cost = (pen + book);
-        double discount1 = cost.multiply(discount.divide(BigDecimal.valueOf(100)))
+        pen = new BigDecimal("105.5").doubleValue();
+        book = new BigDecimal("235.83").doubleValue();
+        BigDecimal discount2 = new BigDecimal("11");
+        BigDecimal cost2 = BigDecimal.valueOf(pen).add(BigDecimal.valueOf(book));
+        BigDecimal discount3 = BigDecimal.valueOf(cost1).multiply(discount2.divide(BigDecimal.valueOf(100)))
                 .setScale(2, RoundingMode.HALF_UP);
 
-        double cost1 = cost - discount1;
-        System.out.println("Cтоимость товаров без скидки = " + cost);
-        System.out.println("Cумма скидки = " + discount1);
-        System.out.println("Cтоимость товаров со скидкой = " + cost1);
+        double cost3 = cost2.subtract(discount3).doubleValue();
+        System.out.println("Cтоимость товаров без скидки = " + cost2);
+        System.out.println("Cумма скидки = " + discount3);
+        System.out.println("Cтоимость товаров со скидкой = " + cost3);
     }   
 }
