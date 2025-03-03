@@ -18,6 +18,7 @@ public class VariablesTheme {
         System.out.println("SSD: объем памяти " + ssd + "TB, " + dlspeed + "GB/сек");
         boolean winos10 = true;
         System.out.println("ОС Windows 10: " + winos10);
+
         System.out.println(" ");
         System.out.println("2. РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ");
         double pen = 105.5;
@@ -36,6 +37,7 @@ public class VariablesTheme {
         System.out.println("   J   a a  v   v  a a");
         System.out.println("J  J  aaaaa  V V  aaaaa");
         System.out.println(" JJ  a     a  V  a     a");
+
         System.out.println(" ");
         System.out.println("4. ВЫВОД MIN И MAX ЗНАЧЕНИЙ ЦЕЛЫХ ЧИСЛОВЫХ ТИПОВ");
         byte max = 127;
@@ -68,6 +70,7 @@ public class VariablesTheme {
         System.out.println("char_max++: " + (int) max4);
         max4 -= 2;
         System.out.println("char_max--: " + (int) max4);
+
         System.out.println(" ");
         System.out.println("5. ПЕРЕСТАНОВКА ЗНАЧЕНИЙ ПЕРЕМЕННЫХ");
         int num = 2;
@@ -87,6 +90,7 @@ public class VariablesTheme {
         num1 ^= num;
         num ^= num1;
         System.out.println("После обмена: num = " + num + ", num1 = " + num1);
+
         System.out.println(" ");
         System.out.println("6. ВЫВОД СИМВОЛОВ И ИХ КОДОВ");
         int usd = 36;
@@ -104,6 +108,7 @@ public class VariablesTheme {
         System.out.println("64 = " + email1);
         System.out.println("94 = " + caret1);
         System.out.println("126 = " + tilde1);
+
         System.out.println(" ");
         System.out.println("7. ВЫВОД В КОНСОЛЬ ASCII-АРТ ДЮКА");
         char slash = '/';
@@ -117,6 +122,7 @@ public class VariablesTheme {
         System.out.println(" " + slash + "      " + backslash);
         System.out.println(slash + "" + underscore + "" + underscore + "" + underscore + "" + 
                 underscore + slash + backslash + underscore + underscore + backslash);
+
         System.out.println(" ");
         System.out.println("8. МАНИПУЛЯЦИИ С СОТНЯМИ, ДЕСЯТКАМИ И ЕДИНИЦАМИ ЧИСЛА");
         int numbers = 123;
@@ -130,6 +136,7 @@ public class VariablesTheme {
         System.out.println("единиц - " + numbers4);
         System.out.println("Сумма разрядов = " + numbers1 + numbers3 + numbers4);
         System.out.println("Произведение разрядов = " + numbers1 * numbers3 * numbers4);
+
         System.out.println(" ");
         System.out.println("9. ПЕРЕВОД СЕКУНД В ЧАСЫ, МИНУТЫ И СЕКУНДЫ");
         int totalsec = 86399; 
@@ -137,6 +144,7 @@ public class VariablesTheme {
         int min = totalsec % 3600 / 60;
         int sec = totalsec % 60;
         System.out.println(hours + ":" + min + ":" + sec);
+
         System.out.println(" ");
         System.out.println("10) РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ");
         pen = new BigDecimal("105.5").doubleValue();
@@ -145,7 +153,6 @@ public class VariablesTheme {
         BigDecimal cost2 = BigDecimal.valueOf(pen).add(BigDecimal.valueOf(book));
         BigDecimal discount3 = BigDecimal.valueOf(cost1).multiply(discount2.divide(BigDecimal.valueOf(100)))
                 .setScale(2, RoundingMode.HALF_UP);
-
         double cost3 = cost2.subtract(discount3).doubleValue();
         System.out.println("Cтоимость товаров без скидки = " + cost2);
         System.out.println("Cумма скидки = " + discount3);

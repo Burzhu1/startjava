@@ -32,8 +32,8 @@ public class VariableNamesTheme {
         System.out.println("7) Исходное число = " + originalNum);
 
         // процент по вкладу
-        int percent = 10000 * 20 / 100;
-        System.out.println("8) Процент по вкладу в размере 10000 под 20 % годовых = " + percent);
+        int depInterest = 10000 * 20 / 100;
+        System.out.println("8) Процент по вкладу в размере 10000 под 20 % годовых = " + depInterest);
 
         // переменная хранит символ &
         String symbol = "&";
@@ -48,8 +48,8 @@ public class VariableNamesTheme {
         System.out.println("11) Тип сообщения " + message);
 
         // число нулей
-        String zero = "0 0 0";
-        System.out.println("12) Число нулей = " + zero);
+        String numZero = "0 0 0";
+        System.out.println("12) Число нулей = " + zenumZeroro);
 
         // уникальное число
         int uniqueDigit1 = 42;
@@ -90,8 +90,8 @@ public class VariableNamesTheme {
         System.out.println("21) " + range);
 
         // имя работника месяца
-        String nameWorker = "Роберт";
-        System.out.println("22) Работник месяца ==> " + nameWorker);
+        String empOfMonth = "Роберт";
+        System.out.println("22) Работник месяца ==> " + empOfMonth);
 
         // название электронной книги
         String namebook = "Тихий Дэн";
@@ -125,8 +125,8 @@ public class VariableNamesTheme {
         System.out.println("1) 100 >< 200 = " + isHundreds);
 
         // компьютер включен?
-        boolean active = true;
-        System.out.println("2) Компьютер включен? = " + active);
+        boolean compActive = true;
+        System.out.println("2) Компьютер включен? = " + compActive);
 
         // есть равные цифры?
         boolean hasEqualDigits = true;
