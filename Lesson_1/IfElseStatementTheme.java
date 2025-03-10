@@ -41,39 +41,39 @@ public class IfElseStatementTheme {
         }
         System.out.println(" ");
         System.out.println("3. ПРОВЕРКА ЧИСЛА");
-        int num3 = 666;
-        if ((num3 != 0) && (num3 % 2 == 0) && (num3 > 0)) {
-            System.out.println("Число " + num3 + " является положительным и чётным");
-        } else if ((num3 != 0) && (num3 % 2 == 0) && (num3 < 0)) {
-            System.out.println("Число " + num3 + " является отрицательным и чётным");
-        } else if ((num3 != 0) && (num3 % 2 == 1) && (num3 > 0)) {
-            System.out.println("Число " + num3 + " является положительным и не чётным");
-        } else if ((num3 != 0) && (num3 % 2 == 1) && (num3 < 0)) {
-            System.out.println("Число " + num3 + " является отрицательным и не чётным");
+        int num2 = 666;
+        if ((num2 != 0) && (num2 % 2 == 0) && (num2 > 0)) {
+            System.out.println("Число " + num2 + " является положительным и чётным");
+        } else if ((num2 != 0) && (num2 % 2 == 0) && (num2 < 0)) {
+            System.out.println("Число " + num2 + " является отрицательным и чётным");
+        } else if ((num2 != 0) && (num2 % 2 == 1) && (num2 > 0)) {
+            System.out.println("Число " + num2 + " является положительным и не чётным");
+        } else if ((num2 != 0) && (num2 % 2 == 1) && (num2 < 0)) {
+            System.out.println("Число " + num2 + " является отрицательным и не чётным");
         } else {
             System.out.println("Число является 0");
         }
         
         System.out.println(" ");
         System.out.println("4. ПОИСК ОДИНАКОВЫХ ЦИФР В ЧИСЛАХ");
-        int num2 = 123;
+        int num3 = 123;
         int num4 = 223;
        
-        int num2Units = num2 % 10;
-        int num2Tens = (num2 / 10) % 10;
-        int num2Hundreds = num2 / 100;
+        int num3Units = num3 % 10;
+        int num3Tens = (num3 / 10) % 10;
+        int num3Hundreds = num3 / 100;
 
         int num4Units = num4 % 10;
         int num4Tens = (num4 / 10) % 10;
         int num4Hundreds = num4 / 100;
-        boolean equalUnits = (num2Units == num4Units);
-        boolean equalTens = (num2Tens == num2Tens);
-        boolean equalHundreds = (num2Hundreds == num4Hundreds);
-        System.out.println("Числа " + num2 + " и " + num4);
+        boolean equalUnits = (num3Units == num4Units);
+        boolean equalTens = (num3Tens == num3Tens);
+        boolean equalHundreds = (num3Hundreds == num4Hundreds);
+        System.out.println("Числа " + num3 + " и " + num4);
         if (equalUnits || equalTens || equalHundreds) {
-            System.out.println("Сотни   " + num2Hundreds + " >< " + num4Hundreds);
-            System.out.println("Десятки " + num2Tens + " >< " + num4Tens);
-            System.out.println("Единицы " + num2Units + " >< " + num4Units);
+            System.out.println("Сотни   " + num3Hundreds + " >< " + num4Hundreds);
+            System.out.println("Десятки " + num3Tens + " >< " + num4Tens);
+            System.out.println("Единицы " + num3Units + " >< " + num4Units);
         } else {
             System.out.println("Нет равных чисел");
         }
