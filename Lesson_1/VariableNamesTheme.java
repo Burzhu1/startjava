@@ -7,8 +7,8 @@ public class VariableNamesTheme {
         System.out.println("1) Цифра " + digit);
 
         // сумма чисел
-        int numberSum = 7 + 6;
-        System.out.println("2) Сумма чисел 7 + 6 = " + numberSum);
+        int numSum = 7 + 6;
+        System.out.println("2) Сумма чисел 7 + 6 = " + numSum);
 
         // произведение цифр
         int product = 9 * 9;
@@ -19,8 +19,8 @@ public class VariableNamesTheme {
         System.out.println("4) Максимальное число = " + max);
 
         // количество десятков
-        int numDozens = 4;
-        System.out.println("5) Количество десятков в числе 47 = " + numDozens + 
+        int numTens = 4;
+        System.out.println("5) Количество десятков в числе 47 = " + numTens + 
                 " (потому что 47 = 4 десятка и 7 единиц)");
 
         // вес собаки
@@ -32,8 +32,8 @@ public class VariableNamesTheme {
         System.out.println("7) Исходное число = " + originalNum);
 
         // процент по вкладу
-        int depInterest = 10000 * 20 / 100;
-        System.out.println("8) Процент по вкладу в размере 10000 под 20 % годовых = " + depInterest);
+        int depositeInterest = 10000 * 20 / 100;
+        System.out.println("8) Процент по вкладу в размере 10000 под 20 % годовых = " + depositeInterest);
 
         // переменная хранит символ &
         String symbol = "&";
@@ -44,85 +44,89 @@ public class VariableNamesTheme {
         System.out.println("10) Ошибка " + errorCode);
 
         // тип сообщения
-        String messageTyp = "NFC";
-        System.out.println("11) Тип сообщения " + message);
+        String messageType = "NFC";
+        System.out.println("11) Тип сообщения " + messageType);
 
         // число нулей
-        String numZero = "0 0 0";
-        System.out.println("12) Число нулей = " + zenumZeroro);
+        String zeroNum = "0 0 0";
+        System.out.println("12) Число нулей = " + zeroNum);
 
         // уникальное число
-        int uniqueDigit1 = 42;
-        System.out.println("13) Уникальным числом является " + uniqueDigit1);
+        int uniqueNum = 42;
+        System.out.println("13) Уникальным числом является " + uniqueNum);
 
         // случайное число
         int randomNum = 6;
         System.out.println("14) Случайное число " + randomNum);
 
         // математическое выражение
-        int mathExpression = 2;
-        int mathExpression1 = 2;
-        System.out.println("15) Математическое выражение 2 * 2 = " + mathExpression * mathExpression1);
+        String mathExpression = "2 + 2";
+        System.out.println("15) Математическое выражение 2 * 2 = " + mathExpression);
 
         // счет в игре
-        int scorePlay = 2;
-        int scorePlay1 = 5;
-        System.out.println("16) " + scorePlay + " : " + scorePlay1);
+        int gameScore = 2;
+        int gameScore1 = 5;
+        System.out.println("16) " + gameScore + " : " + gameScore1);
 
         // максимальная длина
         int maxLength = 200;
         System.out.println("17) Максимальная длина = " + maxLength + " метров");
 
         // пункт меню
-        int menu = 1;
-        System.out.println("18) " + menu + ". Чай зелёный");
+        int menuItem = 1;
+        System.out.println("18) " + menuItem + ". Чай зелёный");
 
         // стоимость кофе
-        int costCofe = 200;
-        System.out.println("19) Цена кофе равняется " + costCofe + " рублей");
+        int cofeCost = 200;
+        System.out.println("19) Цена кофе равняется " + cofeCost + " рублей");
 
         // начальная дата
-        int date = 2000;
-        System.out.println("20) Дата начала 21 века " + date + " год");
+        int startingDate = 2000;
+        System.out.println("20) Дата начала 21 века " + startingDate + " год");
 
         // окончание диапазона
-        String range = "Конец интервала = с6 + 5";
-        System.out.println("21) " + range);
+        String rangeEnd = "Конец интервала = с6 + 5";
+        System.out.println("21) " + rangeEnd);
 
         // имя работника месяца
-        String empOfMonth = "Роберт";
-        System.out.println("22) Работник месяца ==> " + empOfMonth);
+        String employeeOfTheMonthName = "Роберт";
+        System.out.println("22) Работник месяца ==> " + employeeOfTheMonthName);
 
         // название электронной книги
-        String namebook = "Тихий Дэн";
-        System.out.println("23) Электронная книга называется " + namebook);
+        String ebookTitle = "Тихий Дэн";
+        System.out.println("23) Электронная книга называется " + ebookTitle);
 
         // размер
         int size = 20;
         System.out.println("24) Размер составляет " + size + " на 60");
 
         // вместимость
-        int content = 33;
-        System.out.println("25) Вместимость фуры составляет " + content + " палеты");
+        int capacity = 33;
+        System.out.println("25) Вместимость фуры составляет " + capacity + " палеты");
 
         // счетчик
-        String counter = "1,2,3,4,5";
-        System.out.println("26) Счёт от 1 до 5 = " + counter);
+        int counter1 = 1;
+        int counter2 = 2;
+        int counter3 = 3;
+        int counter4 = 4;
+        int counter5 = 5;
+        System.out.println("26) Счёт от 1 до 5 = " + counter1 + ", " + counter2 + ", " + 
+                counter3 + ", " + counter4 + ", " + counter5);
 
         // путь до файла
-        String path2 = ("VariableNamesTheme.java");
-        System.out.println("27) Адрес файла " + path2);
+        String filePath = ("VariableNamesTheme.java");
+        System.out.println("27) Адрес файла " + filePath);
 
         // количество чисел в каждой строке
-        int numbers = 50;
-        System.out.println("28) Всего в каждой строке " + numbers + " чисел");
+        int num1 = 50;
+        System.out.println("28) Всего в каждой строке " + num1 + " чисел");
 
         System.out.println(" ");
         System.out.println("2. BOOLEAN-ПЕРЕМЕННЫЕ");
 
         // сотни равны?
-        boolean isHundreds = false;
-        System.out.println("1) 100 >< 200 = " + isHundreds);
+        boolean hundredsEqual = false;
+        System.out.println("1) 100 >< 200 = " + hundredsEqual);
 
         // компьютер включен?
         boolean compActive = true;
@@ -141,8 +145,8 @@ public class VariableNamesTheme {
         System.out.println("5) Является пустым = " + isEmpty);
 
         // активное?
-        boolean active1 = true;
-        System.out.println("6) Активное = " + active1);
+        boolean isActive = true;
+        System.out.println("6) Активное = " + isActive);
 
         // новое?
         boolean isNew = true;
@@ -160,24 +164,24 @@ public class VariableNamesTheme {
         System.out.println("3. АББРЕВИАТУРЫ ");
 
         // старый universally unique identifier
-        String uniqueid = "1) universally unique identifier";
-        System.out.println(uniqueid);
+        String oldUuid = "1) universally unique identifier";
+        System.out.println(oldUuid);
 
         // производитель оперативной памяти
-        String rammanuFacturer = "2) Manufacturer of random-access memory";
-        System.out.println(rammanuFacturer);
+        String manufacturer = "2) Manufacturer of random-access memory";
+        System.out.println(manufacturer);
 
         // емкость жесткого диска
-        String hdd = "3) hard disk capacity";
-        System.out.println(hdd);
+        String hddCapacity = "3) hard disk capacity";
+        System.out.println(hddCapacity);
 
         // протокол передачи гипертекста
         String httpprotocol = "4) hypertext transfer protocol";
         System.out.println(httpprotocol);
 
         // сокращенный uniform resource locator
-        String uulocator = "5) uniform resource locator";
-        System.out.println(uulocator);
+        String url = "5) uniform resource locator";
+        System.out.println(url);
 
         // новый идентификатор клиента
         String newid = "6) new client ID";
