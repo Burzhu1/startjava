@@ -136,7 +136,11 @@ public class IfElseStatementTheme {
             System.out.println("Оценка по программированию - 4");
         } else if (pointsForProgramming >= 91 && pointsForProgramming <= 100) {
             System.out.println("Оценка по программированию - 5");
-        }
+        } 
+        double averageGrade = (2 + 5) / 2;
+        double averagePercent = (historyScores + pointsForProgramming) / 2;
+        System.out.println("средний балл оценок по предметам - " + averageGrade);
+        System.out.println("средний % по предметам - " + averagePercent);
        
         System.out.println(" ");
         System.out.println("8. РАСЧЕТ ГОДОВОЙ ПРИБЫЛИ");
@@ -145,9 +149,9 @@ public class IfElseStatementTheme {
         double prodCost = 9001.729;
         double annualProfit = (monthProfit * 12) - ((premisesRent * 12) + (prodCost * 12));
         if (annualProfit > 0) {
-            System.out.println("Прибыль за год: +" + annualProfit);
+            System.out.println("Прибыль за год: +" + annualProfit + " руб.");
         } else {
-            System.out.println("Прибыль за год: " + annualProfit);
+            System.out.println("Прибыль за год: " + annualProfit + " руб.");
         }
     }
 }
