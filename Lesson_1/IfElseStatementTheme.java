@@ -42,19 +42,18 @@ public class IfElseStatementTheme {
         System.out.println(" ");
         System.out.println("3. ПРОВЕРКА ЧИСЛА");
         int num3 = 666;
-        if ((num3 != 0) && (num3 % 2 == 0) && (num3 > 0)) 
+        if ((num3 != 0) && (num3 % 2 == 0) && (num3 > 0)) {
             System.out.println("Число " + num3 + " является положительным и чётным");
-                else if ((num3 != 0) && (num3 % 2 == 0) && (num3 < 0)){
-                    System.out.println("Число " + num3 + " является отрицательным и чётным");
-              } else if ((num3 != 0) && (num3 % 2 == 1) && (num3 > 0)){
-                    System.out.println("Число " + num3 + " является положительным и не чётным");
-              }
-                else if ((num3 != 0) && (num3 % 2 == 1) && (num3 < 0)){
-                    System.out.println("Число " + num3 + " является отрицательным и не чётным");
-                }
-                else {
-                    System.out.println("Число является 0");
-                }
+        } else if ((num3 != 0) && (num3 % 2 == 0) && (num3 < 0)) {
+            System.out.println("Число " + num3 + " является отрицательным и чётным");
+        } else if ((num3 != 0) && (num3 % 2 == 1) && (num3 > 0)) {
+            System.out.println("Число " + num3 + " является положительным и не чётным");
+        } else if ((num3 != 0) && (num3 % 2 == 1) && (num3 < 0)) {
+            System.out.println("Число " + num3 + " является отрицательным и не чётным");
+        } else {
+            System.out.println("Число является 0");
+        }
+        
         System.out.println(" ");
         System.out.println("4. ПОИСК ОДИНАКОВЫХ ЦИФР В ЧИСЛАХ");
         int num2 = 123;
@@ -75,26 +74,24 @@ public class IfElseStatementTheme {
             System.out.println("Сотни   " + num2Hundreds + " >< " + num4Hundreds);
             System.out.println("Десятки " + num2Tens + " >< " + num4Tens);
             System.out.println("Единицы " + num2Units + " >< " + num4Units);
-           } else {
+        } else {
             System.out.println("Нет равных чисел");
         }
 
         System.out.println(" ");
         System.out.println("5. ОПРЕДЕЛЕНИЕ СИМВОЛА ПО ЕГО КОДУ");
-        char wBig = '\u0057';
-        char wSmall = '\u0077';
+        char  bigLetterW = '\u0057';
+        char smallLetterW = '\u0077';
         char symbol = '\u005E';
         char numOne = '\u0031';
-        if (wBig >= '\u0041' && wBig <= '\u005A') {
-                System.out.println("'" + wBig + "'" + " - большая буква");
-        }
-            else if (wBig >= '\u0061' && wBig <= '\u007A') {
-                System.out.println("'" + wBig + "'" + " - маленькая буква");
-                }
-            else if (wBig >= '\u0031' && wBig <= '\u0039') {
-                System.out.println("'" + wBig + "'" + " - является числом");
-          } else {
-                System.out.println("'" + wBig + "'" + " - ни буква и ни цифра");
+        if (bigLetterW >= '\u0041' && bigLetterW <= '\u005A') {
+            System.out.println("'" + bigLetterW + "'" + " - большая буква");
+        } else if (bigLetterW >= '\u0061' && bigLetterW <= '\u007A') {
+            System.out.println("'" + bigLetterW + "'" + " - маленькая буква");
+        } else if (bigLetterW >= '\u0031' && bigLetterW <= '\u0039') {
+            System.out.println("'" + bigLetterW + "'" + " - является числом");
+        } else {
+            System.out.println("'" + bigLetterW + "'" + " - ни буква и ни цифра");
         }
 
         System.out.println(" ");
@@ -103,16 +100,20 @@ public class IfElseStatementTheme {
         System.out.println("Сумма вклада " + depositSum + " руб");
         if (depositSum < 100000) {
             System.out.println("Сумма начисленных 5% " + ((depositSum / 100) * 5 + " руб"));
-            System.out.println("Итоговая сумма с 5% годовых " + (depositSum + (depositSum / 100) * 5) + " руб");
+            System.out.println("Итоговая сумма с 5% годовых " + (depositSum + (depositSum / 100) * 
+                    5) + " руб");
         }
-             if (depositSum > 100000 && depositSum <= 300000) {
-                System.out.println("Сумма начисленных 7% " + ((depositSum / 100) * 7 + " руб"));
-                System.out.println("Итоговая сумма с 7% годовых " + (depositSum + (depositSum / 100) * 7) + " руб");
-            }
-             if (depositSum > 300000) {
-                System.out.println("Сумма начисленных 10% " + ((depositSum / 100) * 10 + " руб"));
-                System.out.println("Итоговая сумма с 10% годовых " + (depositSum + (depositSum / 100) * 10) + " руб");
-            }
+        if (depositSum > 100000 && depositSum <= 300000) {
+            System.out.println("Сумма начисленных 7% " + ((depositSum / 100) * 7 + " руб"));
+            System.out.println("Итоговая сумма с 7% годовых " + (depositSum + (depositSum / 100) * 
+                    7) + " руб");
+        }
+        if (depositSum > 300000) {
+            System.out.println("Сумма начисленных 10% " + ((depositSum / 100) * 
+                    10 + " руб"));
+            System.out.println("Итоговая сумма с 10% годовых " + (depositSum + (depositSum / 100) *
+                    10) + " руб");
+        }
 
         System.out.println(" ");
         System.out.println("7. ОПРЕДЕЛЕНИЕ ОЦЕНКИ ПО ПРЕДМЕТАМ");
@@ -120,43 +121,33 @@ public class IfElseStatementTheme {
         int pointsForProgramming = 92;
         if (historyScores <= 60) {
             System.out.println("Оценка по истории - 2");
+        } else if (historyScores >= 61 && historyScores <= 71) {
+            System.out.println("Оценка по истории - 3");
+        } else if (historyScores >= 72 && historyScores <= 90) {
+            System.out.println("Оценка по истории - 4");
+        } else if (historyScores >= 91 && historyScores <= 100) {
+            System.out.println("Оценка по истории - 5");
         }
-            else if (historyScores >= 61 && historyScores <= 71) {
-                System.out.println("Оценка по истории - 3");
-            }
-            else if (historyScores >= 72 && historyScores <= 90) {
-                System.out.println("Оценка по истории - 4");
-            }
-            else if (historyScores >= 91 && historyScores <= 100) {
-                System.out.println("Оценка по истории - 5");
-            }
         if (pointsForProgramming <= 60) {
             System.out.println("Оценка по программированию - 2");
+        } else if (pointsForProgramming >= 61 && pointsForProgramming <= 71) {
+            System.out.println("Оценка по программированию - 3");
+        } else if (pointsForProgramming >= 72 && pointsForProgramming <= 90) {
+            System.out.println("Оценка по программированию - 4");
+        } else if (pointsForProgramming >= 91 && pointsForProgramming <= 100) {
+            System.out.println("Оценка по программированию - 5");
         }
-            else if (pointsForProgramming >= 61 && pointsForProgramming <= 71) {
-                System.out.println("Оценка по программированию - 3");
-            }
-            else if (pointsForProgramming >= 72 && pointsForProgramming <= 90) {
-                System.out.println("Оценка по программированию - 4");
-            }
-            else if (pointsForProgramming >= 91 && pointsForProgramming <= 100) {
-                System.out.println("Оценка по программированию - 5");
-            }
        
-       System.out.println(" ");
-       System.out.println("8. РАСЧЕТ ГОДОВОЙ ПРИБЫЛИ");
-       double monthProfit = 13025.233;
-       double premisesRent = 5123.018;
-       double prodCost = 9001.729;
-       double annualProfit = (monthProfit * 12) - ((premisesRent * 12) + (prodCost * 12));
-       if (annualProfit > 0) {
-        System.out.println("Прибыль за год: +" + annualProfit);
-       } else {
+        System.out.println(" ");
+        System.out.println("8. РАСЧЕТ ГОДОВОЙ ПРИБЫЛИ");
+        double monthProfit = 13025.233;
+        double premisesRent = 5123.018;
+        double prodCost = 9001.729;
+        double annualProfit = (monthProfit * 12) - ((premisesRent * 12) + (prodCost * 12));
+        if (annualProfit > 0) {
+            System.out.println("Прибыль за год: +" + annualProfit);
+        } else {
             System.out.println("Прибыль за год: " + annualProfit);
-       }
-
-       System.out.println(" ");
-       System.out.println("10. ПОДСЧЕТ НАЧИСЛЕННЫХ БАНКОМ %");
-       
+        }
     }
 }
