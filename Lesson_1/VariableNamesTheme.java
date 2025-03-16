@@ -89,8 +89,8 @@ public class VariableNamesTheme {
         System.out.println("21) " + rangeEnd);
 
         // имя работника месяца
-        String employeeOfTheMonthName = "Роберт";
-        System.out.println("22) Работник месяца ==> " + employeeOfTheMonthName);
+        String employeeOfTheMonth = "Роберт";
+        System.out.println("22) Работник месяца ==> " + employeeOfTheMonth);
 
         // название электронной книги
         String ebookTitle = "Тихий Дэн";
@@ -118,23 +118,22 @@ public class VariableNamesTheme {
         System.out.println("27) Адрес файла " + filePath);
 
         // количество чисел в каждой строке
-        int num1 = 50;
-        System.out.println("28) Всего в каждой строке " + num1 + " чисел");
+        int numbersPerRow = 50;
+        System.out.println("28) Всего в каждой строке " + numbersPerRow + " чисел");
 
-        System.out.println(" ");
-        System.out.println("2. BOOLEAN-ПЕРЕМЕННЫЕ");
+        System.out.println("\n2. BOOLEAN-ПЕРЕМЕННЫЕ\n");
 
         // сотни равны?
-        boolean hundredsEqual = false;
-        System.out.println("1) 100 >< 200 = " + hundredsEqual);
+        boolean isEqualHundreds = false;
+        System.out.println("1) 100 >< 200 = " + isEqualHundreds);
 
         // компьютер включен?
         boolean compActive = true;
         System.out.println("2) Компьютер включен? = " + compActive);
 
         // есть равные цифры?
-        boolean hasEqualDigits = true;
-        System.out.println("3) Равны ли цифры 2,2,2,2 = " + hasEqualDigits);
+        boolean isEqualDigits = true;
+        System.out.println("3) Равны ли цифры 2,2,2,2 = " + isEqualDigits);
 
         // создано?
         boolean isCreated = true;
@@ -157,35 +156,34 @@ public class VariableNamesTheme {
         System.out.println("8) Электронная почта действительная? === " + isValidEmail);
 
         // имеются уникальные строки?
-        boolean hasUniqueStrings = false;
-        System.out.println("9) Наличие уникальных строк = " + hasUniqueStrings);
+        boolean isUniqueStrings = false;
+        System.out.println("9) Наличие уникальных строк = " + isUniqueStrings);
 
-        System.out.println(" ");
-        System.out.println("3. АББРЕВИАТУРЫ ");
+        System.out.println("\n3. АББРЕВИАТУРЫ\n");
 
         // старый universally unique identifier
         String oldUuid = "1) universally unique identifier";
         System.out.println(oldUuid);
 
         // производитель оперативной памяти
-        String manufacturer = "2) Manufacturer of random-access memory";
-        System.out.println(manufacturer);
+        String ramManufacturer = "2) Manufacturer of random-access memory";
+        System.out.println(ramManufacturer);
 
         // емкость жесткого диска
         String hddCapacity = "3) hard disk capacity";
         System.out.println(hddCapacity);
 
         // протокол передачи гипертекста
-        String httpprotocol = "4) hypertext transfer protocol";
-        System.out.println(httpprotocol);
+        String httpProtocol = "4) hypertext transfer protocol";
+        System.out.println(httpProtocol);
 
-        // сокращенный uniform resource locator
+        // Адрес ресурса uniform resource locator
         String url = "5) uniform resource locator";
         System.out.println(url);
 
         // новый идентификатор клиента
-        String newid = "6) new client ID";
-        System.out.println(newid);
+        String newId = "6) new client ID";
+        System.out.println(newId);
 
         // american standard code for information interchange
         String ascii = "7) american standard code for information interchange";
