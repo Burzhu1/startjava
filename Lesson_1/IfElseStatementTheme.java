@@ -41,22 +41,22 @@ public class IfElseStatementTheme {
         
         System.out.println("\n3. ПРОВЕРКА ЧИСЛА\n");
         int num2 = 666;
-        String a;
-        String = b;
+        String positiveOrNegativeNum;
+        String numberParity;
         if (num2 == 0) {
             System.out.println("Число является 0");
         } else { 
             if (num2 < 0) {
-                a = "является отрицательным";
+                positiveOrNegativeNum = "является отрицательным";
             } else {
-                a = "является положительным";
+                positiveOrNegativeNum = "является положительным";
             } 
             if (num2 % 2 == 0) {
-                b = "чётным";
+                numberParity = "чётным";
             } else {
-                b = "нечётным";
+                numberParity = "нечётным";
             }
-            System.out.println("Число " + num2 + " " + a + " и " + b);
+            System.out.println("Число " + num2 + " " + positiveOrNegativeNum + " и " + numberParity);
         }
         System.out.println("\n4. ПОИСК ОДИНАКОВЫХ ЦИФР В ЧИСЛАХ\n");
         int num3 = 123;
