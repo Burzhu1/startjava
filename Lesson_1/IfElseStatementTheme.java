@@ -64,7 +64,7 @@ public class IfElseStatementTheme {
        
         boolean isEqualOnes = ((num3 % 10) == (num4 % 10));
         boolean isEqualTens = (((num3 / 10) % 10) == ((num3 / 10) % 10));
-        boolean isEqualHundreds = ((num3 / 100) == (num4 / 100));
+        boolean isEqualHundreds = (num3 / 100 == (num4 / 100));
         System.out.println("Числа " + num3 + " и " + num4);
         if (isEqualOnes || isEqualTens || isEqualHundreds) {
             System.out.println("Сотни   " + (num3 / 100) + " и " + (num4 / 100) + " не равны");
