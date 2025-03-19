@@ -105,13 +105,8 @@ public class VariableNamesTheme {
         System.out.println("25) Вместимость фуры составляет " + capacity + " палеты");
 
         // счетчик
-        int counter1 = 1;
-        int counter2 = 2;
-        int counter3 = 3;
-        int counter4 = 4;
-        int counter5 = 5;
-        System.out.println("26) Счёт от 1 до 5 = " + counter1 + ", " + counter2 + ", " + 
-                counter3 + ", " + counter4 + ", " + counter5);
+        int counter = 1;
+        System.out.println("26) Счётчик " + counter);
 
         // путь до файла
         String filePath = ("VariableNamesTheme.java");
@@ -128,12 +123,12 @@ public class VariableNamesTheme {
         System.out.println("1) 100 >< 200 = " + isEqualHundreds);
 
         // компьютер включен?
-        boolean compActive = true;
-        System.out.println("2) Компьютер включен? = " + compActive);
+        boolean isComputerOn = true;
+        System.out.println("2) Компьютер включен? = " + isComputerOn);
 
         // есть равные цифры?
-        boolean isEqualDigits = true;
-        System.out.println("3) Равны ли цифры 2,2,2,2 = " + isEqualDigits);
+        boolean hasEqualDigits = true;
+        System.out.println("3) Равны ли цифры 2,2,2,2 = " + hasEqualDigits);
 
         // создано?
         boolean isCreated = true;
@@ -156,37 +151,37 @@ public class VariableNamesTheme {
         System.out.println("8) Электронная почта действительная? === " + isValidEmail);
 
         // имеются уникальные строки?
-        boolean isUniqueStrings = false;
-        System.out.println("9) Наличие уникальных строк = " + isUniqueStrings);
+        boolean hasUniqueStrings = false;
+        System.out.println("9) Наличие уникальных строк = " + hasUniqueStrings);
 
         System.out.println("\n3. АББРЕВИАТУРЫ\n");
 
         // старый universally unique identifier
-        String oldUuid = "1) universally unique identifier";
+        String oldUuid = "1) 550e8400-e29b-41d4-a716-446655440000.";
         System.out.println(oldUuid);
 
         // производитель оперативной памяти
-        String ramManufacturer = "2) Manufacturer of random-access memory";
+        String ramManufacturer = "2) Kingston";
         System.out.println(ramManufacturer);
 
         // емкость жесткого диска
-        String hddCapacity = "3) hard disk capacity";
+        String hddCapacity = "3) Toshiba 2 TB HDWL120UZSVA — объём 2 ТБ";
         System.out.println(hddCapacity);
 
         // протокол передачи гипертекста
-        String httpProtocol = "4) hypertext transfer protocol";
+        String httpProtocol = "4) GET / HTTP/1.1.";
         System.out.println(httpProtocol);
 
         // Адрес ресурса uniform resource locator
-        String url = "5) uniform resource locator";
-        System.out.println(url);
+        String shortUrl = "5) /courses/networks.";
+        System.out.println(shortUrl);
 
         // новый идентификатор клиента
-        String newId = "6) new client ID";
+        String newId = "6) 6779ef20e75817b79602.";
         System.out.println(newId);
 
         // american standard code for information interchange
-        String ascii = "7) american standard code for information interchange";
+        String ascii = "7) 0x4E";
         System.out.println(ascii);
     } 
 }
