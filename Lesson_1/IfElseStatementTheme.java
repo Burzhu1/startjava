@@ -19,10 +19,10 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Рост не 1.8 м");
         }
-        char name = "Egor".charAt(0);
-        if (name == 'M') {
+        char initial = "Egor".charAt(0);
+        if (initial == 'M') {
             System.out.println("Имя начинается на букву M");
-        } else if (name == 'I') {
+        } else if (initial == 'I') {
             System.out.println("Имя начинается на букву I");
         } else {
             System.out.println("Имя не начинается на буквы M и I");
@@ -41,19 +41,15 @@ public class IfElseStatementTheme {
         
         System.out.println("\n3. ПРОВЕРКА ЧИСЛА\n");
         int checkedNum = 666;
-        String positiveOrNegativeNum;
-        String numberParity;
         if (checkedNum == 0) {
             System.out.println("Число является 0");
         } else { 
-            if (checkedNum < 0) {
-                positiveOrNegativeNum = "является отрицательным";
-            } else {
+            String positiveOrNegativeNum = "является отрицательным";
+            String numberParity = "чётным";
+            if (checkedNum > 0) {
                 positiveOrNegativeNum = "является положительным";
-            } 
-            if (checkedNum % 2 == 0) {
-                numberParity = "чётным";
-            } else {
+            }
+            if (checkedNum % 2 != 0) {
                 numberParity = "нечётным";
             }
             System.out.println("Число " + checkedNum + " " + positiveOrNegativeNum + " и " + numberParity);
@@ -61,17 +57,23 @@ public class IfElseStatementTheme {
 
         System.out.println("\n4. ПОИСК ОДИНАКОВЫХ ЦИФР В ЧИСЛАХ\n");
         int num3 = 123;
-        int num4 = 223;
+        int num4 = 456;
         boolean isEqualOnes = ((num3 % 10) == (num4 % 10));
-        boolean isEqualTens = (((num3 / 10) % 10) == ((num3 / 10) % 10));
-        boolean isEqualHundreds = (num3 / 100 == (num4 / 100));
+        boolean isEqualTens = (((num3 / 10) % 10) == ((num4 / 10) % 10));
+        boolean isEqualHundreds = (num3 / 100 == num4 / 100);
         System.out.println("Числа " + num3 + " и " + num4);
         if (isEqualOnes || isEqualTens || isEqualHundreds) {
-            System.out.println("Сотни   " + (num3 / 100) + " и " + (num4 / 100) + " равны");
-            System.out.println("Десятки " + ((num3 / 10) % 10) + " и " + ((num4 / 10) % 10) + " равны");
-            System.out.println("Единицы " + (num3 % 10) + " и " + (num4 % 10) + " равны");
+            if (isEqualHundreds) {
+                System.out.println("Сотни   " + (num3 / 100) + " и " + (num4 / 100) + " равны");
+            }
+            if (isEqualTens) {
+                System.out.println("Десятки " + ((num3 / 10) % 10) + " и " + ((num4 / 10) % 10) + " равны");
+            }
+            if (isEqualOnes) {
+                System.out.println("Единицы " + (num3 % 10) + " и " + (num4 % 10) + " равны");
+            }
         } else {
-            System.out.println("Нет равных чисел");
+            System.out.println("Нет равных разрядов");
         }
 
         System.out.println("\n5. ОПРЕДЕЛЕНИЕ СИМВОЛА ПО ЕГО КОДУ\n");
@@ -88,16 +90,13 @@ public class IfElseStatementTheme {
 
         System.out.println("\n6. ПОДСЧЕТ НАЧИСЛЕННЫХ БАНКОМ %\n");
         double depositSum = 321123.59;
-        double percentage = 0;
-        int percents = 0;
+        int percents = 7;
         if (depositSum < 100000) {
             percents = 5;
-        } else if (depositSum <= 300000) {
-            percents = 7;
-        } else {
+        } else if (depositSum > 300000) {
             percents = 10;
         }
-        percentage = (depositSum * percents) / 100;
+        double percentage = (depositSum * percents) / 100;
         double depositWithInterest = depositSum + percentage;
         System.out.println("Сумма вклада: " + depositSum + " руб");
         System.out.println("Сумма начисленных " + percents + "%: " + percentage + " руб");
@@ -105,9 +104,7 @@ public class IfElseStatementTheme {
 
         System.out.println("\n7. ОПРЕДЕЛЕНИЕ ОЦЕНКИ ПО ПРЕДМЕТАМ\n");
         int historyPercent = 59;
-        int csPercent = 92;
         int historyGrade = 2;
-        int csGrade = 2;
         if (historyPercent > 91) {
             historyGrade = 5;
         } else if (historyPercent > 73) {
@@ -115,6 +112,8 @@ public class IfElseStatementTheme {
         } else if (historyPercent > 60) {
             historyGrade = 3;
         }
+        int csGrade = 2;
+        int csPercent = 92;
         if (csPercent > 91) {
             csGrade = 5;
         } else if (csPercent > 73) {
