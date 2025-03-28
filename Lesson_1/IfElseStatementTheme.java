@@ -40,16 +40,20 @@ public class IfElseStatementTheme {
         }
         
         System.out.println("\n3. ПРОВЕРКА ЧИСЛА\n");
-        int checkedNum = 666;
+        int checkedNum = 777;
         if (checkedNum == 0) {
             System.out.println("Число является 0");
-        } else { 
-            String positiveOrNegativeNum = "является отрицательным";
+        } else {
+            String positiveOrNegativeNum;
+            String parityNum;
             if (checkedNum > 0) {
                 positiveOrNegativeNum = "является положительным";
+            } else {
+                positiveOrNegativeNum = "является отрицательным";
             }
-            if (checkedNum % 2 != 0) {
-                String parityNum = "чётным";
+            if (checkedNum % 2 == 0) {
+                parityNum = "чётным";
+            } else {
                 parityNum = "нечётным";
             }
             System.out.println("Число " + checkedNum + " " + positiveOrNegativeNum + " и " + parityNum);
