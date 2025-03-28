@@ -45,14 +45,14 @@ public class IfElseStatementTheme {
             System.out.println("Число является 0");
         } else { 
             String positiveOrNegativeNum = "является отрицательным";
-            String numberParity = "чётным";
             if (checkedNum > 0) {
                 positiveOrNegativeNum = "является положительным";
             }
             if (checkedNum % 2 != 0) {
-                numberParity = "нечётным";
+                String parityNum = "чётным";
+                parityNum = "нечётным";
             }
-            System.out.println("Число " + checkedNum + " " + positiveOrNegativeNum + " и " + numberParity);
+            System.out.println("Число " + checkedNum + " " + positiveOrNegativeNum + " и " + parityNum);
         }
 
         System.out.println("\n4. ПОИСК ОДИНАКОВЫХ ЦИФР В ЧИСЛАХ\n");
@@ -90,17 +90,17 @@ public class IfElseStatementTheme {
 
         System.out.println("\n6. ПОДСЧЕТ НАЧИСЛЕННЫХ БАНКОМ %\n");
         double depositSum = 321123.59;
-        int percents = 7;
+        int percent = 7;
         if (depositSum < 100000) {
-            percents = 5;
+            percent = 5;
         } else if (depositSum > 300000) {
-            percents = 10;
+            percent = 10;
         }
-        double percentage = (depositSum * percents) / 100;
+        double percentage = (depositSum * percent) / 100;
         double depositWithInterest = depositSum + percentage;
         System.out.println("Сумма вклада: " + depositSum + " руб");
-        System.out.println("Сумма начисленных " + percents + "%: " + percentage + " руб");
-        System.out.println("Итоговая сумма с " + percents + "% годовых: " + depositWithInterest + " руб");
+        System.out.println("Сумма начисленных " + percent + "%: " + percentage + " руб");
+        System.out.println("Итоговая сумма с " + percent + "% годовых: " + depositWithInterest + " руб");
 
         System.out.println("\n7. ОПРЕДЕЛЕНИЕ ОЦЕНКИ ПО ПРЕДМЕТАМ\n");
         int historyPercent = 59;
