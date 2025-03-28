@@ -141,14 +141,14 @@ public class CyclesTheme {
             if (i <= 33) {
                 System.out.printf("\n%-8s %-10s %-30s%n", "DECIMAL", "CHARACTER", "DESCRIPTION");
             }
-            System.out.printf("\n%4d %8c %30s%n", i, symbol, description);
+            System.out.printf("\n%4d %8c       %-30s%n", i, symbol, description);
         }
         System.out.println("\n");
         for (int i = 98; i <= 122; i += 2) {
             char symbol = (char) i;
             String description = Character.getName(i);
            
-            System.out.printf("\n%4d %8c %30s%n", i, symbol, description);
+            System.out.printf("\n%4d %8c %26s%n", i, symbol, description);
         }
 
         System.out.println("\n");
