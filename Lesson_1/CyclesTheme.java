@@ -86,10 +86,12 @@ public class CyclesTheme {
             }
             checkNum1 /= 10;
         }
-        if (twos % 2 == 0){
-            System.out.println("Число  " + checkNum + " нечётное, " + " количество двоек" + " (" + twos + ")");
+        if (twos % 2 == 0) {
+            System.out.println("Число  " + checkNum + " нечётное, " + 
+                    " количество двоек" + " (" + twos + ")");
         } else {
-            System.out.println("Число  " + checkNum + " чётное, " + " количество двоек" + " (" + twos + ")");
+            System.out.println("Число  " + checkNum + " чётное, " + 
+                    " количество двоек" + " (" + twos + ")");
         }
         
         System.out.println("\n6. ВЫВОД ГЕОМЕТРИЧЕСКИХ ФИГУР\n");
@@ -100,38 +102,37 @@ public class CyclesTheme {
             System.out.println(); 
         }
         System.out.println("\n");
-            int i2 = 5;
-            while (i2 >= 1) {
-                int j2 = 1;
-                while (j2 <= i2) {
-                    System.out.print("#");
-                    j2++;
-                }
-                System.out.println();
-                i2--;
+        int i2 = 5;
+        while (i2 >= 1) {
+            int j2 = 1;
+            while (j2 <= i2) {
+                System.out.print("#");
+                j2++;
             }
+            System.out.println();
+            i2--;
+        }
         System.out.println("\n");
-            int i3 = 3;
+        int i3 = 3;
+        do {
+            int j3 = 3;
             do {
-                int j3 = 3;
-                do {
-                    System.out.print("$");
-                    j3--;
-                } while (j3 >= i3);
-                System.out.println();
-                i3--;
-            } while (i3 >= 1);
-            int k = 1;
+                System.out.print("$");
+                j3--;
+            } while (j3 >= i3);
+            System.out.println();
+            i3--;
+        } while (i3 >= 1);
+        int k = 1;
+        do {
+            int j4 = 2;
             do {
-                int j4 = 2;
-                do {
-                    System.out.print("$");
-                    j4--;
-                } while (j4 >= k);
-                System.out.println();
-                k++;
-            } while (k <= 2);
-          
+                System.out.print("$");
+                j4--;
+            } while (j4 >= k);
+            System.out.println();
+            k++;
+        } while (k <= 2);
 
         System.out.println("\n7. ВЫВОД ASCII-СИМВОЛОВ\n");
         for (int i = 33; i < 48; i += 2) {
