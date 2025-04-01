@@ -93,7 +93,7 @@ public class CyclesTheme {
             System.out.println("Число " + checkedNum + " чётное, " + 
                     " количество двоек" + " (" + twos + ")");
         }
-        
+
         System.out.println("\n6. ВЫВОД ГЕОМЕТРИЧЕСКИХ ФИГУР\n");
         for (int row = 0; row < 5; row++) {
             for (int col = 0; col < 10; col++) {
@@ -101,6 +101,7 @@ public class CyclesTheme {
             }
             System.out.println(); 
         }
+
         int triangleHeight = 5;
         while (triangleHeight >= 1) {
             int symbolsInRow = 1;
@@ -111,6 +112,7 @@ public class CyclesTheme {
             System.out.println();
             triangleHeight--;
         }
+
         triangleHeight = 1;
         boolean growing = true;
         do {
@@ -146,35 +148,30 @@ public class CyclesTheme {
         }
 
         System.out.println("\n8. ПРОВЕРКА, ЯВЛЯЕТСЯ ЛИ ЧИСЛО ПАЛИНДРОМОМ'\n");
-        int num = 1234321;
-        int originalNumber = num;
+        checkedNum = 1234321;
+        currNum = checkedNum;
         int reversedNumber = 0;
-        while (num != 0) {
-            int digit = num % 10;
+        while (checkedNum > 0) {
+            int digit = checkedNum % 10;
             reversedNumber = reversedNumber * 10 + digit;
-            num /= 10;
+            checkedNum /= 10;
         }
-        if (originalNumber == reversedNumber) {
-            System.out.println("Число " + originalNumber + " - палиндром");
+        if (currNum == reversedNumber) {
+            System.out.println("Число " + currNum + " - палиндром");
         } else {
-            System.out.println("Число " + originalNumber + " - не палиндром");
+            System.out.println("Число " + currNum + " - не палиндром");
         }
     
         System.out.println("\n9. ПРОВЕРКА, ЯВЛЯЕТСЯ ЛИ ЧИСЛО СЧАСТЛИВЫМ\n");
-        num = 123321;
+        int num = 123329;
         int firstHalf = num / 1000;
         int secondHalf = num % 1000;
         int sumFirstHalf = 0;
-        int temp = firstHalf;
-        while (temp > 0) {
-            sumFirstHalf += temp % 10;
-            temp /= 10;
-        }
         int sumSecondHalf = 0;
-        temp = secondHalf;
-        while (temp > 0) {
-            sumSecondHalf += temp % 10;
-            temp /= 10;
+        for (int temp1 = firstHalf, temp2 = secondHalf; temp1 > 0 || 
+                temp2 > 0; temp1 /= 10, temp2 /= 10) {
+            sumFirstHalf += temp1 % 10;
+            sumSecondHalf += temp2 % 10;
         }
         if (sumFirstHalf == sumSecondHalf) {
             System.out.println("Число " + num + " - счастливое");
@@ -189,18 +186,18 @@ public class CyclesTheme {
         for (int i = 2; i <= 9; i++) {
             System.out.printf("%4d", i);
         }
-        System.out.println("\n");
+        System.out.println();
         System.out.print("---+");
         for (int i = 2; i <= 9; i++) {
             System.out.print("----");
         }
-        System.out.println("\n");
+        System.out.println();
         for (int i = 2; i <= 9; i++) {
             System.out.printf("%2d |", i);
             for (int j = 2; j <= 9; j++) {
                 System.out.printf("%4d", i * j);
             }
-            System.out.println("\n");
+            System.out.println();
         }
     }
 } 
