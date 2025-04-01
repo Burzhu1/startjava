@@ -40,21 +40,17 @@ public class IfElseStatementTheme {
         }
         
         System.out.println("\n3. ПРОВЕРКА ЧИСЛА\n");
-        int checkedNum = 777;
+        int checkedNum = 444;
         if (checkedNum == 0) {
             System.out.println("Число является 0");
         } else {
-            String positiveOrNegativeNum;
-            String parityNum;
+            String positiveOrNegativeNum = "является отрицательным";
+            String parityNum = "чётным";
             if (checkedNum > 0) {
                 positiveOrNegativeNum = "является положительным";
-            } else {
-                positiveOrNegativeNum = "является отрицательным";
             }
-            if (checkedNum % 2 == 0) {
-                parityNum = "чётным";
-            } else {
-                parityNum = "нечётным";
+            if (checkedNum % 2 == 1) {
+                parityNum = "не чётным";
             }
             System.out.println("Число " + checkedNum + " " + positiveOrNegativeNum + " и " + parityNum);
         }
@@ -68,13 +64,13 @@ public class IfElseStatementTheme {
         System.out.println("Числа " + num3 + " и " + num4);
         if (isEqualOnes || isEqualTens || isEqualHundreds) {
             if (isEqualHundreds) {
-                System.out.println("Сотни   " + (num3 / 100) + " и " + (num4 / 100) + " равны");
+                System.out.println("Сотни   " + (num3 / 100) + " равны");
             }
             if (isEqualTens) {
-                System.out.println("Десятки " + ((num3 / 10) % 10) + " и " + ((num4 / 10) % 10) + " равны");
+                System.out.println("Десятки " + ((num3 / 10) % 10) + " равны");
             }
             if (isEqualOnes) {
-                System.out.println("Единицы " + (num3 % 10) + " и " + (num4 % 10) + " равны");
+                System.out.println("Единицы " + (num3 % 10) + " равны");
             }
         } else {
             System.out.println("Нет равных разрядов");
