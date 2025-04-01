@@ -53,16 +53,16 @@ public class CyclesTheme {
         System.out.println("\nСумма цифр: " + sum);
 
         System.out.println("\n4. ВЫВОД ЧИСЕЛ В НЕСКОЛЬКО СТРОК\n");
-        int start1 = 1;
-        int end1 = 24;
+        start = 1;
+        end = 24;
         int count = 0;
         int num5;
-        if (start1 % 2 == 1) {
-            num5 = start1;
+        if (start % 2 == 1) {
+            num5 = start;
         } else {
-            num5 = start1 + 1;
+            num5 = start + 1;
         }
-        for (int i = num5; i < end1; i += 2) {
+        for (int i = num5; i < end; i += 2) {
             System.out.printf("%3d", i);
             count++;
             if (count % 5 == 0) {
@@ -77,81 +77,74 @@ public class CyclesTheme {
         }
         
         System.out.println("\n5. ПРОВЕРКА КОЛИЧЕСТВА ДВОЕК ЧИСЛА НА ЧЕТНОСТЬ/НЕЧЕТНОСТЬ\n");
-        int checkNum = 3242592;
+        int checkedNum = 3242592;
         int twos = 0;
-        int checkNum1 = checkNum;
-        while (checkNum1 > 0) {
-            if (checkNum1 % 10 == 2) {
+        int currNum = checkedNum;
+        while (currNum > 0) {
+            if (currNum % 10 == 2) {
                 twos++; 
             }
-            checkNum1 /= 10;
+            currNum /= 10;
         }
         if (twos % 2 == 0) {
-            System.out.println("Число  " + checkNum + " нечётное, " + 
+            System.out.println("Число " + checkedNum + " нечётное, " + 
                     " количество двоек" + " (" + twos + ")");
         } else {
-            System.out.println("Число  " + checkNum + " чётное, " + 
+            System.out.println("Число " + checkedNum + " чётное, " + 
                     " количество двоек" + " (" + twos + ")");
         }
         
         System.out.println("\n6. ВЫВОД ГЕОМЕТРИЧЕСКИХ ФИГУР\n");
-        for (int i1 = 0; i1 < 5; i1++) {
-            for (int j1 = 0; j1 < 10; j1++) {
+        for (int row = 0; row < 5; row++) {
+            for (int col = 0; col < 10; col++) {
                 System.out.print("*");
             }
             System.out.println(); 
         }
-        System.out.println("\n");
-        int i2 = 5;
-        while (i2 >= 1) {
-            int j2 = 1;
-            while (j2 <= i2) {
+        int triangleHeight = 5;
+        while (triangleHeight >= 1) {
+            int symbolsInRow = 1;
+            while (symbolsInRow <= triangleHeight) {
                 System.out.print("#");
-                j2++;
+                symbolsInRow++;
             }
             System.out.println();
-            i2--;
+            triangleHeight--;
         }
-        System.out.println("\n");
-        int i3 = 3;
+        triangleHeight = 1;
+        boolean growing = true;
         do {
-            int j3 = 3;
+            int symbolsInRow = 0;
             do {
                 System.out.print("$");
-                j3--;
-            } while (j3 >= i3);
+                symbolsInRow++;
+            } while (symbolsInRow < triangleHeight);
             System.out.println();
-            i3--;
-        } while (i3 >= 1);
-        int k = 1;
-        do {
-            int j4 = 2;
-            do {
-                System.out.print("$");
-                j4--;
-            } while (j4 >= k);
-            System.out.println();
-            k++;
-        } while (k <= 2);
+            if (growing) {
+                triangleHeight++;
+                if (triangleHeight > 3) {
+                    growing = false;
+                    triangleHeight = 2;
+                }
+            } else {
+                triangleHeight--;
+            }
+        } while (triangleHeight > 0);
 
         System.out.println("\n7. ВЫВОД ASCII-СИМВОЛОВ\n");
         for (int i = 33; i < 48; i += 2) {
-            char symbol = (char) i;
             String description = Character.getName(i);
             if (i <= 33) {
                 System.out.printf("\n%-8s %-10s %-30s%n", "DECIMAL", "CHARACTER", "DESCRIPTION");
             }
-            System.out.printf("\n%4d %8c       %-30s%n", i, symbol, description);
+            System.out.printf("\n%4d %8c       %-30s%n", i, (char) i, description);
         }
         System.out.println("\n");
         for (int i = 98; i <= 122; i += 2) {
-            char symbol = (char) i;
             String description = Character.getName(i);
-           
-            System.out.printf("\n%4d %8c %26s%n", i, symbol, description);
+            System.out.printf("\n%4d %8c %26s%n", i, (char) i, description);
         }
 
-        System.out.println("\n");
         System.out.println("\n8. ПРОВЕРКА, ЯВЛЯЕТСЯ ЛИ ЧИСЛО ПАЛИНДРОМОМ'\n");
         int num = 1234321;
         int originalNumber = num;
@@ -168,9 +161,9 @@ public class CyclesTheme {
         }
     
         System.out.println("\n9. ПРОВЕРКА, ЯВЛЯЕТСЯ ЛИ ЧИСЛО СЧАСТЛИВЫМ\n");
-        int num7 = 123321;
-        int firstHalf = num7 / 1000;
-        int secondHalf = num7 % 1000;
+        num = 123321;
+        int firstHalf = num / 1000;
+        int secondHalf = num % 1000;
         int sumFirstHalf = 0;
         int temp = firstHalf;
         while (temp > 0) {
@@ -184,9 +177,9 @@ public class CyclesTheme {
             temp /= 10;
         }
         if (sumFirstHalf == sumSecondHalf) {
-            System.out.println("Число " + num7 + " - счастливое");
+            System.out.println("Число " + num + " - счастливое");
         } else {
-            System.out.println("Число " + num7 + " - не счастливое");
+            System.out.println("Число " + num + " - не счастливое");
         }
         System.out.println("Сумма цифр " + firstHalf + " = " + sumFirstHalf);
         System.out.println("Сумма " + secondHalf + " = " + sumSecondHalf);
@@ -196,18 +189,18 @@ public class CyclesTheme {
         for (int i = 2; i <= 9; i++) {
             System.out.printf("%4d", i);
         }
-        System.out.println();
-        System.out.print(" --+");
+        System.out.println("\n");
+        System.out.print("---+");
         for (int i = 2; i <= 9; i++) {
             System.out.print("----");
         }
-        System.out.println();
+        System.out.println("\n");
         for (int i = 2; i <= 9; i++) {
             System.out.printf("%2d |", i);
             for (int j = 2; j <= 9; j++) {
                 System.out.printf("%4d", i * j);
             }
-            System.out.println();
+            System.out.println("\n");
         }
     }
 } 
