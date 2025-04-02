@@ -35,10 +35,11 @@ public class CyclesTheme {
         if (num3 > max) {
             max = num3;
         }
-        System.out.print("Числа в порядке убывания: ");
+        System.out.print("\nЧисла в порядке убывания: \n");
         for (int i = max - 1; i > min; i--) {
             System.out.print(i + " ");
         }
+        System.out.println();
         
         System.out.println("\n3. ВЫВОД РЕВЕРСИВНОГО ЧИСЛА И СУММЫ ЕГО ЦИФР\n");
         int num4 = 1234;
@@ -93,15 +94,14 @@ public class CyclesTheme {
             System.out.println("Число " + checkedNum + " чётное, " + 
                     " количество двоек" + " (" + twos + ")");
         }
-
         System.out.println("\n6. ВЫВОД ГЕОМЕТРИЧЕСКИХ ФИГУР\n");
         for (int row = 0; row < 5; row++) {
             for (int col = 0; col < 10; col++) {
                 System.out.print("*");
             }
-            System.out.println(); 
+            System.out.println();
         }
-
+        System.out.println();
         int triangleHeight = 5;
         while (triangleHeight >= 1) {
             int symbolsInRow = 1;
@@ -112,7 +112,7 @@ public class CyclesTheme {
             System.out.println();
             triangleHeight--;
         }
-
+        System.out.println();
         triangleHeight = 1;
         boolean growing = true;
         do {
@@ -168,9 +168,10 @@ public class CyclesTheme {
         int secondHalf = num % 1000;
         int sumFirstHalf = 0;
         int sumSecondHalf = 0;
-        for (int temp1 = firstHalf, temp2 = secondHalf; temp1 > 0 || 
-                temp2 > 0; temp1 /= 10, temp2 /= 10) {
+        for (int temp1 = firstHalf; temp1 > 0; temp1 /= 10) {
             sumFirstHalf += temp1 % 10;
+        }
+        for (int temp2 = secondHalf; temp2 > 0; temp2 /= 10) {
             sumSecondHalf += temp2 % 10;
         }
         if (sumFirstHalf == sumSecondHalf) {
