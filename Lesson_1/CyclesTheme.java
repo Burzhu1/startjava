@@ -35,7 +35,7 @@ public class CyclesTheme {
         if (num3 > max) {
             max = num3;
         }
-        System.out.print("\nЧисла в порядке убывания: \n");
+        System.out.print("Числа в порядке убывания: \n");
         for (int i = max - 1; i > min; i--) {
             System.out.print(i + " ");
         }
@@ -101,7 +101,7 @@ public class CyclesTheme {
             }
             System.out.println();
         }
-        System.out.println();
+        // Пустая строка в коде для разделения блоков
         int triangleHeight = 5;
         while (triangleHeight >= 1) {
             int symbolsInRow = 1;
@@ -112,7 +112,7 @@ public class CyclesTheme {
             System.out.println();
             triangleHeight--;
         }
-        System.out.println();
+        // Пустая строка в коде для разделения блоков
         triangleHeight = 1;
         boolean growing = true;
         do {
@@ -132,12 +132,12 @@ public class CyclesTheme {
                 triangleHeight--;
             }
         } while (triangleHeight > 0);
-
+        // Пустая строка в коде для разделения блоков
         System.out.println("\n7. ВЫВОД ASCII-СИМВОЛОВ\n");
         for (int i = 33; i < 48; i += 2) {
             String description = Character.getName(i);
             if (i <= 33) {
-                System.out.printf("\n%-8s %-10s %-30s%n", "DECIMAL", "CHARACTER", "DESCRIPTION");
+                System.out.printf("%-8s %-10s %-30s%n", "DECIMAL", "CHARACTER", "DESCRIPTION");
             }
             System.out.printf("\n%4d %8c       %-30s%n", i, (char) i, description);
         }
@@ -163,39 +163,41 @@ public class CyclesTheme {
         }
     
         System.out.println("\n9. ПРОВЕРКА, ЯВЛЯЕТСЯ ЛИ ЧИСЛО СЧАСТЛИВЫМ\n");
-        int num = 123329;
-        int firstHalf = num / 1000;
-        int secondHalf = num % 1000;
+        checkedNum = 123321;
+        int firstHalf = checkedNum / 1000;
+        int secondHalf = checkedNum % 1000;
+
         int sumFirstHalf = 0;
         int sumSecondHalf = 0;
-        for (int temp1 = firstHalf; temp1 > 0; temp1 /= 10) {
-            sumFirstHalf += temp1 % 10;
-        }
-        for (int temp2 = secondHalf; temp2 > 0; temp2 /= 10) {
-            sumSecondHalf += temp2 % 10;
-        }
-        if (sumFirstHalf == sumSecondHalf) {
-            System.out.println("Число " + num + " - счастливое");
-        } else {
-            System.out.println("Число " + num + " - не счастливое");
+        int i = firstHalf;
+        int j = secondHalf;
+        for (; i > 0; ) {
+            sumFirstHalf += i % 10;
+            sumSecondHalf += j % 10;
+            i /= 10;
+            j /= 10;
         }
         System.out.println("Сумма цифр " + firstHalf + " = " + sumFirstHalf);
-        System.out.println("Сумма " + secondHalf + " = " + sumSecondHalf);
+        System.out.println("Сумма цифр " + secondHalf + " = " + sumSecondHalf);
+        if (sumFirstHalf == sumSecondHalf) {
+            System.out.println("Число " + checkedNum + " - счастливое");
+        } else {
+            System.out.println("Число " + checkedNum + " - не счастливое");
+        }
 
         System.out.println("\n10. ВЫВОД ТАБЛИЦЫ УМНОЖЕНИЯ ПИФАГОРА\n");
         System.out.print("   |");
-        for (int i = 2; i <= 9; i++) {
+        for (i = 2; i <= 9; i++) {
             System.out.printf("%4d", i);
         }
-        System.out.println();
-        System.out.print("---+");
-        for (int i = 2; i <= 9; i++) {
+        System.out.print("\n---+");
+        for (i = 2; i <= 9; i++) {
             System.out.print("----");
         }
         System.out.println();
-        for (int i = 2; i <= 9; i++) {
+        for (i = 2; i <= 9; i++) {
             System.out.printf("%2d |", i);
-            for (int j = 2; j <= 9; j++) {
+            for (j = 2; j <= 9; j++) {
                 System.out.printf("%4d", i * j);
             }
             System.out.println();
