@@ -9,19 +9,20 @@ public class Wolf {
         System.out.println("Идёт");
     }
     
-     public void sit() {
+    public void sit() {
         System.out.println("Сидит");
-     }
+    }
 
-     public void run() {
+    public void run() {
         System.out.println("Бежит");
-     }
+    }
 
-     public void howl() {
+    public void howl() {
         System.out.println("Воет");
-     }
+    }
 
-     public void hunt() {
+    public void hunt() {
         System.out.println("Охотится");
-     }
+    }
 }
+
