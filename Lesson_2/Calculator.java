@@ -1,5 +1,5 @@
 public class Calculator {
-    public static double calculate(int num1, int num2, char operator) {
+    public static double calculate1(int num1, int num2, char operator) {
         double result;
         if ((operator == '/' || operator == '%') && num2 == 0) {
             throw new IllegalArgumentException("Деление на ноль запрещено");
