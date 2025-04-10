@@ -13,7 +13,7 @@ public class CalculatorTest {
             int num2 = scanner.nextInt();
 
             try {
-                String result = Calculator.calculator(num1, num2, operator);
+                double result = Calculator.calculate(num1, num2, operator);
                 System.out.println(result);
             } catch (IllegalArgumentException e) {
                 System.out.println("Ошибка: " + e.getMessage());
