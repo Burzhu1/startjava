@@ -31,13 +31,25 @@ public class Calculator {
                 break;
             case '^':
                 result = 1;
+                int counter = 0;
+                int exponent;
+
                 if (num2 >= 0) {
-                    for (int i = 0; i < num2; i++) {
+                    exponent = num2;
+                } else {
+                    exponent = -num2;
+                }
+                if (exponent > 0) {
+                    do {
                         result *= num1;
-                    }
-                } 
+                        counter++;
+                    } while (counter < exponent);
+                }
+                if (num2 < 0) {
+                    result = 1 / result;
+                }
                 break;
-            default:
+                default:
                 System.out.println("Неизвестный оператор: " + operator);
                 return;
         }
