@@ -4,7 +4,6 @@ public class Calculator {
         if ((operator == '/' || operator == '%') && num2 == 0) {
             throw new IllegalArgumentException("Деление на ноль запрещено");
         }
-
         switch (operator) {
             case '+':
                 result = num1 + num2;
