@@ -46,10 +46,10 @@ public class Jaeger {
         this.armor = armor;
     }
 
-    public void displayInfo() {
-        System.out.println("Модель " + modelName);
-        System.out.println("Скорость " + speed);
-        System.out.println("Сила " + strength);
-        System.out.println("Броня " + armor);
+    public String toString() {
+        return "Модель: " + modelName +
+                "\nСкорость: " + speed +
+                "\nСила: " + strength +
+                "\nБроня: " + armor;
     }
 }
