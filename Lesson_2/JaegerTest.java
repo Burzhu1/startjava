@@ -5,9 +5,9 @@ public class JaegerTest {
         gipsyDanger.setSpeed(7);
         gipsyDanger.setStrength(8);
         gipsyDanger.setArmor(6);
+        System.out.println(gipsyDanger);
 
         Jaeger chernoAlpha = new Jaeger("Cherno Alpha", 3, 10, 10);
-        gipsyDanger.displayInfo();
-        chernoAlpha.displayInfo();
+        System.out.println(chernoAlpha);
     }
 }
