@@ -22,17 +22,11 @@ public class Calculator {
                 break;
             case '^':
                 result = 1;
-                int counter = 0;
-                int exponent = num2 >= 0 ? num2 : -num2;
-                if (exponent > 0) {
-                    do {
-                        result *= num1;
-                        counter++;
-                    } while (counter < exponent);
+                int exponent = Math.abs(num2);
+                for (int i = 0; i < exponent; i++) {
+                    result *= num1;
                 }
-                if (num2 < 0) {
-                    result = 1 / result;
-                }
+                result = num2 < 0 ? 1 / result : result;
                 break;
             default:
                 throw new IllegalArgumentException("Операция '" + operator + "' не поддерживается");
